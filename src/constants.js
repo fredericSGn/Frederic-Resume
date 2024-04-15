@@ -1,5 +1,10 @@
+//5. Plik który potrzebujemy aby przekazać dane do sceny
+// Exportujemay skale aby powiększyć wszystko na erkanie.
+
+//e. tworzymy scale 4x
 export const scaleFactor = 4;
 
+//f. Data do objektów
 export const dialogueData = {
   exit: `Wyjscie z mojego domu.`,
   bed: `Moje wyro gdzie spie i nie tylko..`,

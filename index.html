@@ -9,12 +9,14 @@
 </head>
 
 <body>
+  <!-- Tworzymy style wewnątrz body -->
   <style>
     @font-face {
       font-family: monogram;
       src: url(monogram.ttf);
     }
 
+    /* c. tworzenie stylu  */
     body {
       font-family: monogram, monospace;
       font-size: 2rem;
@@ -75,7 +77,10 @@
     }
   </style>
   <div id="app">
+    <!-- Tworzymy ui w celu texboxu i UI -->
     <div id="ui">
+      <!-- i. tworzymy markup  -->
+      <!-- instrukcja tab clik -->
       <p class="note">Tap/Click around to move</p>
 
       <div id="textbox-container" style="display: none">
@@ -88,9 +93,12 @@
         </div>
       </div>
     </div>
+    <!-- Tworzymy Canvas aby jemu dać kontroli do Kaboom -->
     <canvas id="game"></canvas>
   </div>
+  <!-- Poprawiamy skąd pobieramy main -->
   <script type="module" src="src/main.js"></script>
+
 </body>
 
 </html>
