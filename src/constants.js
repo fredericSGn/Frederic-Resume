@@ -22,6 +22,6 @@ export const dialogueData = {
   chair: `To jest krzeslo.`,
   wardrobe: `Komodora na kurtki, szale, czapki, buty.`,
   shower: `Prysznic nic nadzwyczajnego.`,
-  resume: `Zyciorys: Support Engineer at Opitz Consulting. Od stycznia 2022 roku pelnie prace w firmie OC. Jako zaangazowany pracownik moimi codziennymi zadaniami sa: analiza, doradztwo, poszukiwanie rozwiazan, utrzymywanie stabilnosci systemow informatyczny itp.... zapraszam na <a href="https://www.opitz-consulting.pl/">strone</a> firmowa. `,
+  resume: `Zyciorys: Support Engineer at Opitz Consulting. Od stycznia 2022 roku pelnie prace w firmie OC. Jako zaangazowany pracownik moimi codziennymi zadaniami sa: analiza, doradztwo, poszukiwanie rozwiazan, utrzymywanie stabilnosci systemow informatyczny itp.... zapraszam do mnie na <a href="https://github.com/fredericSGn?tab=repositories">strone</a> lub na <a href="https://www.opitz-consulting.pl/">strone</a> firmowa. `,
   toilete: `Kibel.`,
 };

@@ -59,7 +59,7 @@ k.scene("main", async () => {
     k.body(),
     // kotwica aby rysował na objekcie na środku niż od góry z lewej, ponieważ sprite w jaki sposób są renderowane to wg. wektorów 0,0 które znajdują się na górze po lewej i tam startują
     k.anchor("center"),
-    k.pos(),
+    k.pos(), //spawnpoint z tiled pobrana data
     k.scale(scaleFactor),
     {
       //w kaboom js możemy bezpośrednio manipulować właściwościami i nie pozyskiwać ich z innych źródeł
@@ -77,7 +77,6 @@ k.scene("main", async () => {
   for (const layer of layers) {
     if (layer.name === "Ograniczenia") {
       for (const Ograniczenia of layer.objects) {
-        // dodajemy kolejny game objekt
         map.add([
           //copy paste
           k.area({
@@ -98,7 +97,7 @@ k.scene("main", async () => {
           player.onCollide(Ograniczenia.name, () => {
             player.isInDialogue = true;
 
-            // Wyświetlamy dialog TODO
+            // Wyświetlamy dialog TODO utils,js
             displayDialogue(
               dialogueData[Ograniczenia.name],
               () => (player.isInDialogue = false)

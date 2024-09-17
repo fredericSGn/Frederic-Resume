@@ -8,12 +8,12 @@ export function displayDialogue(text, onDisplayEnd) {
   dialogueUI.style.display = "block";
 
   // implementujemy scrolowanie tekstu za pomocą podstawowego jsa
+  // innerHTML jako linki do stron
   let index = 0;
   let currentText = "";
   const intervalRef = setInterval(() => {
     if (index < text.length) {
       currentText += text[index];
-      // innerHTML jako linki do stron
       dialogue.innerHTML = currentText;
       index++;
       return;
@@ -23,6 +23,9 @@ export function displayDialogue(text, onDisplayEnd) {
   }, 1);
 
   // logika close buttona
+  // nastepnie usuwamy funkcje wewnątrz funkcji czyli działa rekursywnie
+  //Tutaj dodajemy Event Listener w chwili kiedy jest click
+  // dodajemy close event listenera za pomoca przaycisku
   const closeBtn = document.getElementById("close");
 
   function onCloseBtnClick() {
@@ -30,12 +33,10 @@ export function displayDialogue(text, onDisplayEnd) {
     dialogueUI.style.display = "none";
     dialogue.innerHTML = "";
     clearInterval(intervalRef);
-    // nastepnie usuwamy funkcje wewnątrz funkcji czyli działa rekursywnie
+
     closeBtn.removeEventListener("click", onCloseBtnClick);
   }
-  //Tutaj dodajemy Event Listener w chwili kiedy jest click
   closeBtn.addEventListener("click", onCloseBtnClick);
-  // dodajemy close event listenera za pomoca przaycisku
   addEventListener("keypress", (key) => {
     if (key.code === "Enter") {
       closeBtn.click();
