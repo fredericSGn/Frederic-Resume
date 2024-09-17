@@ -14,7 +14,7 @@ export const dialogueData = {
   clock: `15:52`,
   certificate: `Dymplom ukonczenia studiow Inzynierskich Frederic Nowacki.`,
   "OC Photo": `Logo Opitz Consulting.`,
-  workStation: `Stanowisko mojej pracy zdalnej.`,
+  workStation: `Stanowisko pracy.`,
   armchair: `Wygodne krzeslo.`,
   couch: `Kanapa.`,
   fridge: `Lodowka.`,
